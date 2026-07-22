@@ -19,8 +19,8 @@ final class CerebrasOptions
     /** @param array<string, mixed> $config */
     public static function fromArray(array $config = []): self
     {
-        $apiKey = Env::loadApiKey(isset($config['apiKey']) ? (string) $config['apiKey'] : null, 'Cerebras_API_KEY', self::PROVIDER_NAME);
-        $baseUrl = Url::withoutTrailingSlash(Env::loadOptionalSetting(isset($config['baseUrl']) ? (string) $config['baseUrl'] : null, 'Cerebras_BASE_URL') ?? self::DEFAULT_BASE_URL);
+        $apiKey = Env::loadApiKey(isset($config['apiKey']) ? (string) $config['apiKey'] : null, 'CEREBRAS_API_KEY', self::PROVIDER_NAME);
+        $baseUrl = Url::withoutTrailingSlash(Env::loadOptionalSetting(isset($config['baseUrl']) ? (string) $config['baseUrl'] : null, 'CEREBRAS_BASE_URL') ?? self::DEFAULT_BASE_URL);
         /** @var array<string, string> $headers */
         $headers = isset($config['headers']) && is_array($config['headers']) ? $config['headers'] : [];
         $sdk = $config['sdk'] ?? null;
