@@ -5,7 +5,7 @@
   "keywords": ["ai", "aisdk", "cerebras", "glm", "openai-compatible"],
   "homepage": "https://github.com/phpaisdk/cerebras",
   "support": {"issues": "https://github.com/phpaisdk/cerebras/issues", "source": "https://github.com/phpaisdk/cerebras"},
-  "require": {"php": "^8.3", "aisdk/core": "^0.8.0", "aisdk/openai-compatible": "^0.8.0"},
+  "require": {"php": "^8.3", "aisdk/core": "^0.8.0", "aisdk/openai-compatible": "^0.8.1"},
   "require-dev": {"laravel/pint": "^1.18", "nyholm/psr7": "^1.8", "pestphp/pest": "^3.0 || ^4.0", "phpstan/phpstan": "^2.0", "rector/rector": "^2.0"},
   "autoload": {"psr-4": {"AiSdk\\": "src/Root/", "AiSdk\\Cerebras\\": "src/"}},
   "autoload-dev": {"psr-4": {"AiSdk\\Cerebras\\Tests\\": "tests/"}},
